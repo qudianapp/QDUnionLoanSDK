@@ -20,11 +20,12 @@ Pod::Spec.new do |s|
   s.resources = 'Outlet/QDUnionLoanSDK.bundle'
 
   # for debug
-  s.public_header_files = 'Outlet/QDUnionLoanSDK.h'
-  s.source_files = 'Sources/*.{h,m}'
-
-  # s.ios.vendored_library = 'Outlet/libQDUnionLoanSDK.a'
   # s.public_header_files = 'Outlet/QDUnionLoanSDK.h'
+  # s.source_files = 'Sources/*.{h,m}'
+
+  s.ios.vendored_library = 'Outlet/libQDUnionLoanSDK.a'
+  s.source_files = 'Outlet/*.{h,m}'
+  s.public_header_files = 'Outlet/QDUnionLoanSDK.h'
 
   s.dependency 'AliyunOSSiOS', '2.8.0'
   s.dependency 'QDAliFaceSDK_iOS', '0.1.2'
