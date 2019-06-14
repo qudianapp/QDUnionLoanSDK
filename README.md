@@ -41,6 +41,8 @@ pod 'QDUnionLoanSDK'
 - (void) clicked
 {
     __weak ViewController* vc = self;
-    [QDUnionLoanSDK showQDUnionLoanViewController:vc ad:YOUR_AD]; // ad or cf
+    // 开启测试模式
+    [QDUnionLoanSDK setDebug:YES];
+    [QDUnionLoanSDK showQDUnionLoanViewController:vc ad:YOUR_AD navigationBarColor:[UIColor whiteColor]];
 }
 ```
