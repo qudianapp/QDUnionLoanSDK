@@ -34,8 +34,9 @@
  *  @param vc
  *  vc:当前页面viewController
  *  ad:约定好或自定义的位置统计信息
+ *  navigationBarColor: 导航栏背景色，默认是白色
  */
-+ (void) showQDUnionLoanViewController:(UIViewController*)vc ad:(NSString*)ad;
++ (void) showQDUnionLoanViewController:(UIViewController *)vc ad:(NSString *)ad navigationBarColor:(UIColor *)navigationBarColor;
 
 /*
  *  支付返回结果处理，需要在openUrl方法中调用
@@ -45,4 +46,10 @@
  */
 + (void) handleAlipayResult:(NSURL*)url;
 
+/*
+ *  设置调试模式
+ *
+ *  debug:debug
+ */
++ (void) setDebug:(BOOL)debug;
 @end
