@@ -17,17 +17,17 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
 
-  s.resources = 'Outlet/QDUnionLoanSDK.bundle'
-
   # for debug
   # s.public_header_files = 'Outlet/QDUnionLoanSDK.h'
   # s.source_files = 'Sources/*.{h,m}'
 
   s.ios.vendored_library = 'Outlet/libQDUnionLoanSDK.a'
-  # s.source_files = 'Outlet/*.{h,m}'
+  s.resources = 'Outlet/Resource/*.bundle'
+  s.ios.vendored_frameworks = 'Outlet/Framework/*.framework'
   s.public_header_files = 'Outlet/QDUnionLoanSDK.h'
 
   s.dependency 'AliyunOSSiOS', '2.8.0'
   s.dependency 'QDAliFaceSDK_iOS', '0.1.2'
-  s.dependency 'QDAliPaySDK', '0.1.2'
+  s.dependency 'AlipaySDK-iOS', '~> 15.5.5'
+
 end
