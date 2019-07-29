@@ -23,8 +23,9 @@ Pod::Spec.new do |s|
 
   s.ios.vendored_library = 'Outlet/libQDUnionLoanSDK.a'
   s.resources = 'Outlet/Resource/*.bundle'
-  s.ios.vendored_frameworks = 'Outlet/Framework/*.framework'
+  s.source_files = 'Outlet/*.h'
   s.public_header_files = 'Outlet/QDUnionLoanSDK.h'
+  s.ios.vendored_frameworks = 'Outlet/Framework/*.framework'
 
   s.dependency 'AliyunOSSiOS', '2.8.0'
   s.dependency 'QDAliFaceSDK_iOS', '0.1.2'
