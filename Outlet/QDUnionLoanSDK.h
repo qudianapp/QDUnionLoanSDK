@@ -53,4 +53,33 @@
  *  debug:debug
  */
 + (void) setDebug:(BOOL)debug;
+
+/*
+ *  设置支持阿里人脸
+ *
+ *  enable:是否支持。默认不支持
+ */
++ (void)setEnableAliface:(BOOL)enable;
+
+/*
+ *  设置支持支付宝
+ *
+ *  enable:是否支持。默认支持
+ */
++ (void)setEnableAlipay:(BOOL)enable;
+
+/*
+ *  设置支持face++人脸
+ *
+ *  enable:是否支持。默认支持
+ */
++ (void)setEnableFaceplus:(BOOL)enable;
+
+/*
+ *  设置支持face++ ocr
+ *
+ *  enable:是否支持。默认支持
+ */
++ (void)setEnableFacePlusVerifyId:(BOOL)enable;
+
 @end
